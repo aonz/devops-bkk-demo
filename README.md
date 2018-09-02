@@ -9,3 +9,16 @@ terraform init
 terraform plan | grep module
 terraform apply
 ```
+
+### Step 2: ALB and Aurora Serverless (~ 3 min)
+Run:
+```
+terraform get
+terraform plan | grep module
+terraform apply -auto-approve
+```
+To SSH tunnel to the database, run:
+```
+ssh-add <path to the key pair pem file>
+<use aurora_ssh_tunnel output from terraform apply>
+```

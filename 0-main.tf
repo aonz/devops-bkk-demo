@@ -29,6 +29,18 @@ variable "bastion_ami" {
   default = "ami-08847abae18baa040"
 }
 
+variable "database_name" {
+  default = "ghost"
+}
+
+variable "database_username" {
+  default = "admin"
+}
+
+variable "database_password" {
+  default = "devopsbkk"
+}
+
 provider "aws" {
   region = "${var.aws_region}"
 }
