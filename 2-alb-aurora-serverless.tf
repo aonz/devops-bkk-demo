@@ -20,7 +20,7 @@ module "alb" {
   logging_enabled          = false
   http_tcp_listeners       = "${list(map("port", "80", "protocol", "HTTP"))}"
   http_tcp_listeners_count = "1"
-  target_groups            = "${list(map("name", "${var.name}", "backend_protocol", "HTTP", "backend_port", "2368", "target_type", "ip"))}"
+  target_groups            = "${list(map("name", "${var.name}", "backend_protocol", "HTTP", "backend_port", "2368", "target_type", "ip", "health_check_interval", "15", "health_check_healthy_threshold", "2", "health_check_timeout", "5", "health_check_unhealthy_threshold", "10", "stickiness_enabled", "false" ))}"
   target_groups_count      = "1"
 }
 

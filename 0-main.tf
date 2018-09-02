@@ -41,6 +41,10 @@ variable "database_password" {
   default = "devopsbkk"
 }
 
+variable "app_name" {
+  default = "ghost"
+}
+
 provider "aws" {
   region = "${var.aws_region}"
 }

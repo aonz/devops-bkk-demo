@@ -6,7 +6,7 @@
 Create key pair with the same name as `name` variable on `0-main.tf` with and run:
 ```
 terraform init
-terraform plan | grep module
+terraform plan
 terraform apply
 ```
 
@@ -14,7 +14,7 @@ terraform apply
 Run:
 ```
 terraform get
-terraform plan | grep module
+terraform plan -no-color | grep '+\s\|-\s\|~\s'
 terraform apply -auto-approve
 ```
 To SSH tunnel to the database, run:
@@ -22,3 +22,11 @@ To SSH tunnel to the database, run:
 ssh-add <path to the key pair pem file>
 <use aurora_ssh_tunnel output from terraform apply>
 ```
+
+### Step 3: ECS and Fargate (~ 2.30 min)
+Uncomment step 3 section on `main.tf` and run:
+```
+terraform plan -no-color | grep '+\s\|-\s\|~\s'
+terraform apply -auto-approve
+```
+
