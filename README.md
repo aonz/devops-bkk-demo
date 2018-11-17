@@ -6,7 +6,7 @@ This demo demonstrates how to use Terraform to provision the infrastructure and 
 
 ## Instructions
 
-You can run this solution in any regions that Fargate and Aurora Serverless are available by adjusting the variable values on `0-main.tf` (Tokyo region is used by default).
+You can run this solution in any regions that Fargate and Aurora Serverless are available by adjusting the variable values on `0-main.tf` (Singapore region is used by default).
 
 You can do it step-by-step either by checking out each individual commit from Git history or comment/uncomment `2-alb-aurora-serverless.tf` and `3-ecs-fargate.tf` files before start. Or you could do everything in one goal by running `terraform init`, `terraform plan` and then `terraform apply`.
 

@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "ap-northeast-1"
+  default = "ap-southeast-1"
 }
 
 variable "name" {
@@ -12,7 +12,7 @@ variable "vpc_cidr" {
 
 variable "vpc_azs" {
   type    = "list"
-  default = ["ap-northeast-1a", "ap-northeast-1c", "ap-northeast-1d"]
+  default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }
 
 variable "vpc_private_subnets" {
@@ -26,7 +26,7 @@ variable "vpc_public_subnets" {
 }
 
 variable "bastion_ami" {
-  default = "ami-08847abae18baa040"
+  default = "ami-085fd1bd447be68e8"
 }
 
 variable "database_name" {
