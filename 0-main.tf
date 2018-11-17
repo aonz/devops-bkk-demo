@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "ap-northeast-1"
+  default = "ap-southeast-1"
 }
 
 variable "name" {
@@ -12,7 +12,7 @@ variable "vpc_cidr" {
 
 variable "vpc_azs" {
   type    = "list"
-  default = ["ap-northeast-1a", "ap-northeast-1c", "ap-northeast-1d"]
+  default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }
 
 variable "vpc_private_subnets" {
