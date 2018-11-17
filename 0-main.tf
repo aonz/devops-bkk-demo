@@ -26,7 +26,7 @@ variable "vpc_public_subnets" {
 }
 
 variable "bastion_ami" {
-  default = "ami-08847abae18baa040"
+  default = "ami-085fd1bd447be68e8"
 }
 
 variable "database_name" {
